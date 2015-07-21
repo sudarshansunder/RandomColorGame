@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.random.colorgame.TimeGameActivity$PlaceholderFragment">
+
+    <TextView android:text="Random Color Game" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:id="@+id/nameText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="140dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/highScoreMainLives"
+        android:layout_below="@+id/nameText"
+        android:text="Time Trial : "
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:layout_margin="35dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/highScoreMainTime"
+        android:layout_below="@+id/highScoreMainLives"
+        android:text="Arcade     : "
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:layout_marginBottom="35dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:tint="#ffffff"
+        android:text="Time trial"
+        android:id="@+id/timeButton"
+        android:layout_marginLeft="55dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/highScoreMainTime"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:tint="#ffffff"
+        android:text="Arcade"
+        android:layout_marginRight="55dp"
+        android:layout_alignParentRight="true"
+        android:id="@+id/livesButton"
+        android:layout_below="@+id/highScoreMainTime"/>
+
+</RelativeLayout>
